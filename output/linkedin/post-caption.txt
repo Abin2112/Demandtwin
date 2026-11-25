@@ -1,0 +1,29 @@
+I’ve been working on DemandTwin, a platform that brings data science, probabilistic consumer modeling, and full-stack engineering into one product research workflow.
+
+The goal is to explore how product attributes, pricing, and competing alternatives affect consumer choices before a founder commits to production.
+
+The data science work includes:
+
+• Data acquisition and EDA — reproducible ingestion, source checksums, missing-value analysis, duplicate removal, cancellation handling, and Parquet storage. The UCI pipeline processed 541,909 source records and retained 348,872 UK purchase lines under documented filters.
+
+• Feature engineering and leakage prevention — recency, frequency, spend, and product activity features, with disjoint customers and separate temporal snapshots for evaluation.
+
+• Machine learning — Logistic Regression, Random Forest, and XGBoost for an external repeat-purchase benchmark, plus conditional logit with an explicit no-purchase alternative for choice studies.
+
+• Probabilistic modeling — empirical Bayes segment preferences, Laplace uncertainty intervals, and an offline hierarchical Bayesian model using PyMC with convergence and posterior predictive checks.
+
+• Evaluation and explainability — log loss, Brier score, ROC-AUC where appropriate, calibration plots, SHAP summaries, and model-based feature contributions.
+
+• Adaptive experiments — expected information gain, sequential preference updates, task budgets, and segment enrollment constraints.
+
+• Reproducibility — recorded seeds, dataset and feature versions, model artifacts, and MLflow experiment tracking.
+
+For the UK repeat-purchase benchmark, Logistic Regression achieved a held-out ROC-AUC of 0.655 and log loss of 0.608. A separate Twin-2K-500 benchmark explored repeated hypothetical pricing answers from a US survey panel.
+
+The application connects these research workflows to product management, consumer experiments, scenario comparisons, and PDF reports using Next.js, FastAPI, PostgreSQL, Redis, and Celery.
+
+The screenshots show a clearly labeled synthetic snack-choice demo. Prospective validation with Indian consumers and observed purchase evidence is the next research milestone.
+
+I’d welcome feedback from people working in data science, consumer research, and applied machine learning.
+
+#DataScience #MachineLearning #BayesianStatistics #FullStackDevelopment
