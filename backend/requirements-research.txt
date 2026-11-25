@@ -1,0 +1,6 @@
+-r requirements.txt
+pymc>=5.23,<6
+arviz>=0.21,<1
+mlflow>=3,<4
+shap>=0.48,<1
+matplotlib>=3.10,<4

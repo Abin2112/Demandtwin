@@ -1,0 +1,12 @@
+{
+  "model": "xgboost",
+  "population": "UK benchmark holdout",
+  "units": "raw log-odds",
+  "mean_absolute_contribution": {
+    "invoices": 0.47952085733413696,
+    "stock_codes": 0.07449033856391907,
+    "units": 0.20881293714046478,
+    "spend_gbp": 0.1829427033662796,
+    "recency_days": 0.12933248281478882
+  }
+}

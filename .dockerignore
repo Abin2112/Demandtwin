@@ -1,0 +1,16 @@
+.git
+.venv
+.pgdata
+.env
+frontend/node_modules
+frontend/.next
+frontend/test-results
+frontend/playwright-report
+data/raw
+data/processed
+data/runtime
+data/synthetic
+artifacts
+mlruns
+**/__pycache__
+backups

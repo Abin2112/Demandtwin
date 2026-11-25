@@ -1,0 +1,197 @@
+[
+  {
+    "id": "online_retail",
+    "name": "Online Retail",
+    "original_source": "Daqing Chen / UCI Machine Learning Repository",
+    "source_url": "https://archive.ics.uci.edu/dataset/352/online+retail",
+    "version": "10.24432/C5BW33",
+    "access_date": "2026-11-05",
+    "license": "CC BY 4.0",
+    "files": [
+      "online_retail.zip"
+    ],
+    "download_status": "downloaded and format verified",
+    "real_human_observations": true,
+    "redistribution": "Permitted with attribution",
+    "intended_use": "External repeat-purchase benchmark",
+    "limitations": "One UK-based non-store retailer, 2010–2011. Exposure, non-purchases and Indian snack preferences are unobserved.",
+    "bytes": 23715478,
+    "records": 541909,
+    "columns": 8,
+    "dtypes": {
+      "InvoiceNo": "str",
+      "StockCode": "str",
+      "Description": "object",
+      "Quantity": "int64",
+      "InvoiceDate": "datetime64[us]",
+      "UnitPrice": "float64",
+      "CustomerID": "Int64",
+      "Country": "str"
+    },
+    "missing": {
+      "InvoiceNo": 0,
+      "StockCode": 0,
+      "Description": 1454,
+      "Quantity": 0,
+      "InvoiceDate": 0,
+      "UnitPrice": 0,
+      "CustomerID": 135080,
+      "Country": 0
+    },
+    "sha256": "f5385cbb54bbebf7196389109c6b0621faab0c304e3702548165e71c84aede8b",
+    "download_url": "https://archive.ics.uci.edu/static/public/352/online+retail.zip"
+  },
+  {
+    "id": "hces",
+    "name": "Household Consumption Expenditure Survey",
+    "original_source": "MoSPI National Sample Survey",
+    "source_url": "https://microdata.gov.in/nada/index.php/catalog/CEXP",
+    "version": "2022–23 and 2023–24",
+    "access_date": "2026-11-05",
+    "license": "Public-use files subject to portal terms",
+    "files": [],
+    "download_status": "microdata requires MoSPI account",
+    "real_human_observations": true,
+    "redistribution": "Verify portal terms before redistribution",
+    "intended_use": "India expenditure context and future population weighting",
+    "limitations": "Survey expenditure and design weights do not measure brand choice.",
+    "bytes": null,
+    "records": null,
+    "columns": null,
+    "dtypes": null,
+    "missing": null,
+    "access_urls": [
+      "https://microdata.gov.in/NADA/index.php/catalog/224/get-microdata",
+      "https://microdata.gov.in/NADA/index.php/catalog/237/get-microdata"
+    ]
+  },
+  {
+    "id": "amazon_grocery",
+    "name": "Amazon Reviews 2023 – Grocery and Gourmet Food",
+    "original_source": "McAuley Lab",
+    "source_url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023",
+    "version": "2023 release",
+    "access_date": "2026-11-05",
+    "license": "Dataset-specific redistribution grant not confirmed in official card",
+    "files": [],
+    "download_status": "withheld pending rights confirmation",
+    "real_human_observations": true,
+    "redistribution": "Unconfirmed",
+    "intended_use": "Review sentiment and product representation",
+    "limitations": "Selection into review writing and unknown exposure. Reviews do not establish purchase incidence.",
+    "bytes": null,
+    "records": null,
+    "columns": null,
+    "dtypes": null,
+    "missing": null
+  },
+  {
+    "id": "off_india",
+    "name": "Open Food Facts – India snacks sample",
+    "original_source": "Open Food Facts contributors",
+    "source_url": "https://openfoodfacts.github.io/documentation/docs/Product-Opener/api/",
+    "version": "live API snapshot",
+    "access_date": "2026-11-05",
+    "license": "ODbL 1.0 database; image rights separate",
+    "files": [
+      "india_snacks.json"
+    ],
+    "download_status": "optional API request with identifying user agent",
+    "real_human_observations": false,
+    "redistribution": "ODbL attribution and share-alike where applicable",
+    "intended_use": "Product attributes and ingredients",
+    "limitations": "Crowdsourced product catalogue, incomplete coverage and no choice outcomes.",
+    "bytes": null,
+    "records": null,
+    "columns": null,
+    "dtypes": null,
+    "missing": null
+  },
+  {
+    "id": "twin2k",
+    "name": "Twin-2K-500",
+    "original_source": "Digital-Twin at Columbia Business School",
+    "source_url": "https://huggingface.co/datasets/LLM-Digital-Twin/Twin-2K-500",
+    "version": "arXiv:2505.17479",
+    "access_date": "2026-11-05",
+    "license": "CC BY 4.0",
+    "files": [
+      "question_catalog.json",
+      "wave1_3_response.csv",
+      "wave4_response.csv"
+    ],
+    "download_status": "downloaded numeric response subset and catalogue",
+    "real_human_observations": true,
+    "redistribution": "Permitted with attribution; avoid republishing person-level profiles",
+    "intended_use": "External test-retest benchmark on 40 repeated hypothetical pricing items",
+    "limitations": "US panel. Human survey responses and generated LLM predictions must stay separate.",
+    "bytes": 6310204,
+    "records": 2058,
+    "columns": {
+      "waves_1_to_3": 761,
+      "wave_4": 127
+    },
+    "dtypes": {
+      "waves_1_to_3": {
+        "int64": 539,
+        "float64": 179,
+        "str": 43
+      },
+      "wave_4": {
+        "float64": 66,
+        "int64": 61
+      }
+    },
+    "missing": {
+      "waves_1_to_3": 200264,
+      "wave_4": 61728
+    },
+    "file_metadata": {
+      "question_catalog.json": {
+        "bytes": 214137,
+        "sha256": "e72e305f0c7c83bb990e97de4c0cf2c718ead18cc197239b7feeb354c9ac1bef",
+        "download_url": "https://huggingface.co/datasets/LLM-Digital-Twin/Twin-2K-500/resolve/main/question_catalog_and_human_response_csv/question_catalog.json"
+      },
+      "wave1_3_response.csv": {
+        "bytes": 5462260,
+        "sha256": "fc227b1682e2654fd4b2a8152294b68118c0e3be4d83f4a9af5f3e96df56d3f0",
+        "download_url": "https://huggingface.co/datasets/LLM-Digital-Twin/Twin-2K-500/resolve/main/question_catalog_and_human_response_csv/wave1_3_response.csv"
+      },
+      "wave4_response.csv": {
+        "bytes": 633807,
+        "sha256": "09ec1a88bdd48fec95963da3102df0ca467378bf729cbc1c0b869b0f1e4fb942",
+        "download_url": "https://huggingface.co/datasets/LLM-Digital-Twin/Twin-2K-500/resolve/main/question_catalog_and_human_response_csv/wave4_response.csv"
+      }
+    }
+  },
+  {
+    "id": "synthetic",
+    "name": "DemandTwin synthetic choice panels",
+    "original_source": "DemandTwin seeded generator",
+    "source_url": null,
+    "version": "snacks-v1",
+    "access_date": null,
+    "license": "Project code license applies to generator",
+    "files": [
+      "choices.jsonl"
+    ],
+    "download_status": "locally generated",
+    "real_human_observations": false,
+    "redistribution": "Permitted",
+    "intended_use": "Software testing and statistical sanity checks",
+    "limitations": "Known assumed utility, linked product attributes and artificial segments. No empirical market evidence.",
+    "bytes": 217656,
+    "records": 540,
+    "columns": 6,
+    "dtypes": {
+      "synthetic": "boolean",
+      "evidence_type": "string",
+      "participant": "string",
+      "segment": "string",
+      "alternatives": "array",
+      "chosen": "integer"
+    },
+    "missing": {},
+    "sha256": "65bffb3f3820719bf2df6db817417effb890d9aa4eb5c8d9ff40114b60d3e76c"
+  }
+]

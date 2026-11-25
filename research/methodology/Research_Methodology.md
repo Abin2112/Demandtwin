@@ -1,0 +1,9 @@
+# Research methodology
+
+Define the eligible opportunity as one shopping choice among the displayed snack alternatives and the outside option. Record respondent segment, protocol version, randomized choice set and order, the choice, and evidence type. Sample adults in preregistered recruitment strata and publish segment coverage. Treat self-selected shopping segments as analysis strata and estimate population weights separately from a justified sampling frame.
+
+Predeclare price and attribute ranges, task count, exclusions, primary metric and minimal practically important effect. Randomize task order and display order. For causal price analysis, vary prices independently of other attributes and specify contrasts before data collection. A combined pack and packaging contrast estimates only the joint effect.
+
+Use participant-grouped holdout for cross-person generalization, a locked unseen task bank for task generalization, and a city holdout for external transfer. Fit preprocessing on training data. Compare paired log loss, multiclass Brier score, calibration and coverage. For human runs use participant-clustered uncertainty intervals, report subgroup sample sizes and control multiplicity for secondary comparisons.
+
+The UK benchmark uses disjoint customers and August/October cutoff dates. Each example uses a 90-day past window and predicts an observed invoice in the next 30 days. The Twin-2K-500 benchmark separates participants and uses only earlier pricing answers to predict each held-out participant's later answers to the same items. Sandbox experiments compare seeded conditional choice models, design policies and chronological updates. Prospective snack-study fidelity, randomized price effects and external city validation remain pending. See the [ethics protocol](../ethics/PROTOCOL.md).

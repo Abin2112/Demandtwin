@@ -1,0 +1,554 @@
+{
+  "synthetic": true,
+  "experiment_1": "See the two separate benchmark JSON files. The UK repeat and choice outcomes are incompatible.",
+  "experiment_2": {
+    "budget": 24,
+    "replicates": 8,
+    "segment": "synthetic value shopper",
+    "policies": {
+      "random": [
+        {
+          "observations": 1,
+          "share_mae": 0.13782060376533095,
+          "design_regret_nats": 0.11481569087998242,
+          "selected_information_gain_nats": 0.27371816068970256,
+          "candidate_coverage": 0.1
+        },
+        {
+          "observations": 2,
+          "share_mae": 0.12678593348154904,
+          "design_regret_nats": 0.09852787137250588,
+          "selected_information_gain_nats": 0.20773989223037423,
+          "candidate_coverage": 0.2
+        },
+        {
+          "observations": 3,
+          "share_mae": 0.1353806560585255,
+          "design_regret_nats": 0.07859809990684617,
+          "selected_information_gain_nats": 0.16742058160926143,
+          "candidate_coverage": 0.275
+        },
+        {
+          "observations": 4,
+          "share_mae": 0.11884338472233785,
+          "design_regret_nats": 0.11142481677121878,
+          "selected_information_gain_nats": 0.11812997052339919,
+          "candidate_coverage": 0.33749999999999997
+        },
+        {
+          "observations": 5,
+          "share_mae": 0.11221886004281977,
+          "design_regret_nats": 0.06772705204381349,
+          "selected_information_gain_nats": 0.1286363218438351,
+          "candidate_coverage": 0.4125
+        },
+        {
+          "observations": 6,
+          "share_mae": 0.10392817042210284,
+          "design_regret_nats": 0.051203612820386706,
+          "selected_information_gain_nats": 0.13026448525643308,
+          "candidate_coverage": 0.42500000000000004
+        },
+        {
+          "observations": 7,
+          "share_mae": 0.10430115696330534,
+          "design_regret_nats": 0.05528675959523115,
+          "selected_information_gain_nats": 0.09985266951540572,
+          "candidate_coverage": 0.4875
+        },
+        {
+          "observations": 8,
+          "share_mae": 0.11019681853195096,
+          "design_regret_nats": 0.0515698896845566,
+          "selected_information_gain_nats": 0.08855618917774769,
+          "candidate_coverage": 0.525
+        },
+        {
+          "observations": 9,
+          "share_mae": 0.10182636034220742,
+          "design_regret_nats": 0.05506656279592878,
+          "selected_information_gain_nats": 0.08205067075107735,
+          "candidate_coverage": 0.55
+        },
+        {
+          "observations": 10,
+          "share_mae": 0.10293212231358682,
+          "design_regret_nats": 0.035214919754683896,
+          "selected_information_gain_nats": 0.08954406739037263,
+          "candidate_coverage": 0.6
+        },
+        {
+          "observations": 11,
+          "share_mae": 0.09912796675982019,
+          "design_regret_nats": 0.02427622013132511,
+          "selected_information_gain_nats": 0.10025420433329155,
+          "candidate_coverage": 0.6499999999999999
+        },
+        {
+          "observations": 12,
+          "share_mae": 0.09813852361831074,
+          "design_regret_nats": 0.032170374251297734,
+          "selected_information_gain_nats": 0.08097498439549833,
+          "candidate_coverage": 0.7124999999999999
+        },
+        {
+          "observations": 13,
+          "share_mae": 0.09997576495784317,
+          "design_regret_nats": 0.026346335975759718,
+          "selected_information_gain_nats": 0.07531328828139566,
+          "candidate_coverage": 0.75
+        },
+        {
+          "observations": 14,
+          "share_mae": 0.09437013352228717,
+          "design_regret_nats": 0.033000454890560485,
+          "selected_information_gain_nats": 0.06648973377692466,
+          "candidate_coverage": 0.7625
+        },
+        {
+          "observations": 15,
+          "share_mae": 0.09453368198824338,
+          "design_regret_nats": 0.023943412938469584,
+          "selected_information_gain_nats": 0.07048475494867656,
+          "candidate_coverage": 0.7875000000000001
+        },
+        {
+          "observations": 16,
+          "share_mae": 0.09657555368407339,
+          "design_regret_nats": 0.03313798901054899,
+          "selected_information_gain_nats": 0.054734530908633255,
+          "candidate_coverage": 0.8
+        },
+        {
+          "observations": 17,
+          "share_mae": 0.09537179766436646,
+          "design_regret_nats": 0.03303981142370896,
+          "selected_information_gain_nats": 0.053503055217310594,
+          "candidate_coverage": 0.8125
+        },
+        {
+          "observations": 18,
+          "share_mae": 0.0958855540562693,
+          "design_regret_nats": 0.03142693932739629,
+          "selected_information_gain_nats": 0.051225700885024414,
+          "candidate_coverage": 0.85
+        },
+        {
+          "observations": 19,
+          "share_mae": 0.0924477411163571,
+          "design_regret_nats": 0.032817738989822515,
+          "selected_information_gain_nats": 0.051011063752769224,
+          "candidate_coverage": 0.8875
+        },
+        {
+          "observations": 20,
+          "share_mae": 0.09007594324036311,
+          "design_regret_nats": 0.03906635073113134,
+          "selected_information_gain_nats": 0.04302022697169619,
+          "candidate_coverage": 0.9
+        },
+        {
+          "observations": 21,
+          "share_mae": 0.08856691655850907,
+          "design_regret_nats": 0.025478033464554333,
+          "selected_information_gain_nats": 0.051755382736454116,
+          "candidate_coverage": 0.9125000000000001
+        },
+        {
+          "observations": 22,
+          "share_mae": 0.08518261434941576,
+          "design_regret_nats": 0.03039462975880333,
+          "selected_information_gain_nats": 0.040931609321655335,
+          "candidate_coverage": 0.95
+        },
+        {
+          "observations": 23,
+          "share_mae": 0.07969191517870436,
+          "design_regret_nats": 0.017532361505108215,
+          "selected_information_gain_nats": 0.052299938009101064,
+          "candidate_coverage": 0.95
+        },
+        {
+          "observations": 24,
+          "share_mae": 0.08430107486425223,
+          "design_regret_nats": 0.026545149542035143,
+          "selected_information_gain_nats": 0.036244391512361834,
+          "candidate_coverage": 0.95
+        }
+      ],
+      "balanced": [
+        {
+          "observations": 1,
+          "share_mae": 0.15810716368610334,
+          "design_regret_nats": 0.23858045072989467,
+          "selected_information_gain_nats": 0.1499534008397903,
+          "candidate_coverage": 0.1
+        },
+        {
+          "observations": 2,
+          "share_mae": 0.18162189618047903,
+          "design_regret_nats": 0.07982729986474926,
+          "selected_information_gain_nats": 0.2873557589295988,
+          "candidate_coverage": 0.2
+        },
+        {
+          "observations": 3,
+          "share_mae": 0.18258758533924332,
+          "design_regret_nats": 0.17921512560668457,
+          "selected_information_gain_nats": 0.10116759536491948,
+          "candidate_coverage": 0.3
+        },
+        {
+          "observations": 4,
+          "share_mae": 0.17942925581343575,
+          "design_regret_nats": 0.06420734120902999,
+          "selected_information_gain_nats": 0.1990485916825267,
+          "candidate_coverage": 0.4
+        },
+        {
+          "observations": 5,
+          "share_mae": 0.16070035750050504,
+          "design_regret_nats": 0.12584776403366632,
+          "selected_information_gain_nats": 0.09345082669683275,
+          "candidate_coverage": 0.5
+        },
+        {
+          "observations": 6,
+          "share_mae": 0.16148385806899257,
+          "design_regret_nats": 0.0454026289707206,
+          "selected_information_gain_nats": 0.15855414231823922,
+          "candidate_coverage": 0.6
+        },
+        {
+          "observations": 7,
+          "share_mae": 0.1464771141326138,
+          "design_regret_nats": 0.08829583762958773,
+          "selected_information_gain_nats": 0.09748745859990651,
+          "candidate_coverage": 0.7
+        },
+        {
+          "observations": 8,
+          "share_mae": 0.11320621220462593,
+          "design_regret_nats": 0.024135406210131227,
+          "selected_information_gain_nats": 0.14556617801670352,
+          "candidate_coverage": 0.8
+        },
+        {
+          "observations": 9,
+          "share_mae": 0.10550212087057359,
+          "design_regret_nats": 0.047764632256724636,
+          "selected_information_gain_nats": 0.09732487571156448,
+          "candidate_coverage": 0.9
+        },
+        {
+          "observations": 10,
+          "share_mae": 0.08962625110487883,
+          "design_regret_nats": 0.0012229377909544394,
+          "selected_information_gain_nats": 0.1221913028158874,
+          "candidate_coverage": 1.0
+        },
+        {
+          "observations": 11,
+          "share_mae": 0.09192767488259818,
+          "design_regret_nats": 0.06666757396033789,
+          "selected_information_gain_nats": 0.045470787608218884,
+          "candidate_coverage": 1.0
+        },
+        {
+          "observations": 12,
+          "share_mae": 0.08909182419796975,
+          "design_regret_nats": 0.00673550426207252,
+          "selected_information_gain_nats": 0.10258731209529683,
+          "candidate_coverage": 1.0
+        },
+        {
+          "observations": 13,
+          "share_mae": 0.08887464039981309,
+          "design_regret_nats": 0.06252094744442432,
+          "selected_information_gain_nats": 0.03693863237444573,
+          "candidate_coverage": 1.0
+        },
+        {
+          "observations": 14,
+          "share_mae": 0.0882249576281253,
+          "design_regret_nats": 0.011432438020695965,
+          "selected_information_gain_nats": 0.08542652676910914,
+          "candidate_coverage": 1.0
+        },
+        {
+          "observations": 15,
+          "share_mae": 0.08722086603778036,
+          "design_regret_nats": 0.05620908651676722,
+          "selected_information_gain_nats": 0.03697264620055118,
+          "candidate_coverage": 1.0
+        },
+        {
+          "observations": 16,
+          "share_mae": 0.08792264685478929,
+          "design_regret_nats": 0.02079338180757738,
+          "selected_information_gain_nats": 0.07262159232630924,
+          "candidate_coverage": 1.0
+        },
+        {
+          "observations": 17,
+          "share_mae": 0.08760552455837053,
+          "design_regret_nats": 0.042287504512381,
+          "selected_information_gain_nats": 0.04425259957394453,
+          "candidate_coverage": 1.0
+        },
+        {
+          "observations": 18,
+          "share_mae": 0.08459206071906639,
+          "design_regret_nats": 0.01476250861328204,
+          "selected_information_gain_nats": 0.0699225967339944,
+          "candidate_coverage": 1.0
+        },
+        {
+          "observations": 19,
+          "share_mae": 0.07933442482927718,
+          "design_regret_nats": 0.027158689410324247,
+          "selected_information_gain_nats": 0.055204566870571854,
+          "candidate_coverage": 1.0
+        },
+        {
+          "observations": 20,
+          "share_mae": 0.07271198661777757,
+          "design_regret_nats": 0.0030031583601276366,
+          "selected_information_gain_nats": 0.07321266500533663,
+          "candidate_coverage": 1.0
+        },
+        {
+          "observations": 21,
+          "share_mae": 0.07308425641053026,
+          "design_regret_nats": 0.03516421203496157,
+          "selected_information_gain_nats": 0.0334816618296182,
+          "candidate_coverage": 1.0
+        },
+        {
+          "observations": 22,
+          "share_mae": 0.0740141807279213,
+          "design_regret_nats": 0.0031182939694765835,
+          "selected_information_gain_nats": 0.06640576368958392,
+          "candidate_coverage": 1.0
+        },
+        {
+          "observations": 23,
+          "share_mae": 0.07373534040843352,
+          "design_regret_nats": 0.037161838052032645,
+          "selected_information_gain_nats": 0.027439760465850054,
+          "candidate_coverage": 1.0
+        },
+        {
+          "observations": 24,
+          "share_mae": 0.07402540913080027,
+          "design_regret_nats": 0.010239137133933597,
+          "selected_information_gain_nats": 0.052705925797724165,
+          "candidate_coverage": 1.0
+        }
+      ],
+      "adaptive": [
+        {
+          "observations": 1,
+          "share_mae": 0.11110015553437655,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.388533851569685,
+          "candidate_coverage": 0.1
+        },
+        {
+          "observations": 2,
+          "share_mae": 0.12165767962976276,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.2522631218385534,
+          "candidate_coverage": 0.1
+        },
+        {
+          "observations": 3,
+          "share_mae": 0.10861621536003409,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.1950403093379593,
+          "candidate_coverage": 0.16250000000000003
+        },
+        {
+          "observations": 4,
+          "share_mae": 0.0914449328849925,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.17482080924059953,
+          "candidate_coverage": 0.1875
+        },
+        {
+          "observations": 5,
+          "share_mae": 0.09209762097840365,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.14769391835662815,
+          "candidate_coverage": 0.2
+        },
+        {
+          "observations": 6,
+          "share_mae": 0.0960985183942874,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.13572607724887564,
+          "candidate_coverage": 0.2
+        },
+        {
+          "observations": 7,
+          "share_mae": 0.0871979100401473,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.11884517519510747,
+          "candidate_coverage": 0.2
+        },
+        {
+          "observations": 8,
+          "share_mae": 0.07693454243123526,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.1075239254316285,
+          "candidate_coverage": 0.2
+        },
+        {
+          "observations": 9,
+          "share_mae": 0.07765680885251758,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.09988575226053739,
+          "candidate_coverage": 0.2
+        },
+        {
+          "observations": 10,
+          "share_mae": 0.07879415296608996,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.08883467408195753,
+          "candidate_coverage": 0.2
+        },
+        {
+          "observations": 11,
+          "share_mae": 0.07646455433104349,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.08724332458212672,
+          "candidate_coverage": 0.2
+        },
+        {
+          "observations": 12,
+          "share_mae": 0.07382529519519536,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.08003496156117573,
+          "candidate_coverage": 0.2
+        },
+        {
+          "observations": 13,
+          "share_mae": 0.07623896235183057,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.07370948901472774,
+          "candidate_coverage": 0.2
+        },
+        {
+          "observations": 14,
+          "share_mae": 0.07612384938090855,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.07071670451227302,
+          "candidate_coverage": 0.2
+        },
+        {
+          "observations": 15,
+          "share_mae": 0.06890731022451999,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.06666613796583881,
+          "candidate_coverage": 0.2
+        },
+        {
+          "observations": 16,
+          "share_mae": 0.06676995131281988,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.06478612680494772,
+          "candidate_coverage": 0.2
+        },
+        {
+          "observations": 17,
+          "share_mae": 0.06501033625256986,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.06227499218868087,
+          "candidate_coverage": 0.2
+        },
+        {
+          "observations": 18,
+          "share_mae": 0.06784889119978595,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.05977742907795705,
+          "candidate_coverage": 0.21250000000000002
+        },
+        {
+          "observations": 19,
+          "share_mae": 0.06807500281589196,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.05897131944411117,
+          "candidate_coverage": 0.21250000000000002
+        },
+        {
+          "observations": 20,
+          "share_mae": 0.06579418304773207,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.05816087477360461,
+          "candidate_coverage": 0.225
+        },
+        {
+          "observations": 21,
+          "share_mae": 0.0608365608378735,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.052093900747447526,
+          "candidate_coverage": 0.225
+        },
+        {
+          "observations": 22,
+          "share_mae": 0.0639522595317693,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.051005695554751054,
+          "candidate_coverage": 0.225
+        },
+        {
+          "observations": 23,
+          "share_mae": 0.06536708503538755,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.05029725996945618,
+          "candidate_coverage": 0.225
+        },
+        {
+          "observations": 24,
+          "share_mae": 0.07076907670496788,
+          "design_regret_nats": 0.0,
+          "selected_information_gain_nats": 0.046542608621010534,
+          "candidate_coverage": 0.225
+        }
+      ]
+    }
+  },
+  "experiment_3": {
+    "status": "pending",
+    "reason": "Individual fidelity requires untouched tasks for human participants."
+  },
+  "experiment_4": {
+    "status": "pending",
+    "reason": "Requires randomized price outcomes collected under an approved protocol."
+  },
+  "experiment_5": {
+    "static": {
+      "prequential_log_loss": 0.900370447707279,
+      "test_choices": 60
+    },
+    "refit_every_10": {
+      "prequential_log_loss": 0.8967123467921514,
+      "test_choices": 60
+    },
+    "sequential_laplace": {
+      "prequential_log_loss": 0.90248581251447,
+      "test_choices": 60
+    }
+  },
+  "experiment_6": {
+    "status": "pending",
+    "reason": "Requires independent Mumbai and transfer-city panels."
+  },
+  "ablation": {
+    "hierarchy": "See conditional_logit_laplace versus empirical_bayes_laplace in sandbox_choice_benchmark.json.",
+    "adaptive_design": "Compare all three policies on the same synthetic oracle in experiment_2.",
+    "updating": "Compare static, periodic refit and sequential Laplace in experiment_5.",
+    "behavioural_calibration": "Pending aligned multiple evidence types with a purchase anchor.",
+    "segment_balancing": "Pending multi-segment design policy study."
+  }
+}

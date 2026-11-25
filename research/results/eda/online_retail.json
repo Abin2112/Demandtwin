@@ -1,0 +1,45 @@
+{
+  "raw_records": 541909,
+  "columns": 8,
+  "duplicate_lines": 5268,
+  "missing": {
+    "InvoiceNo": 0,
+    "StockCode": 0,
+    "Description": 1454,
+    "Quantity": 0,
+    "InvoiceDate": 0,
+    "UnitPrice": 0,
+    "CustomerID": 135080,
+    "Country": 0
+  },
+  "cancellation_lines_after_deduplication": 9251,
+  "retained_purchase_lines": 348872,
+  "retained_customers": 3916,
+  "retained_invoices": 16579,
+  "retained_stock_codes": 3639,
+  "retained_customers_with_multiple_invoices": 2563,
+  "gross_retained_line_value_gbp": 7242855.32,
+  "price_gbp_quantiles": {
+    "0.01": 0.21,
+    "0.5": 1.95,
+    "0.95": 8.5,
+    "0.99": 12.75
+  },
+  "monthly_gross_gbp": {
+    "2010-12": 496169.17,
+    "2011-01": 440766.93,
+    "2011-02": 354463.56,
+    "2011-03": 465237.12,
+    "2011-04": 406004.55,
+    "2011-05": 541667.09,
+    "2011-06": 522927.46,
+    "2011-07": 483223.1,
+    "2011-08": 493984.25,
+    "2011-09": 789282.62,
+    "2011-10": 811916.96,
+    "2011-11": 967883.05,
+    "2011-12": 469329.46
+  },
+  "coverage_start": "2010-12-01 08:26:00",
+  "coverage_end": "2011-12-09 12:49:00"
+}

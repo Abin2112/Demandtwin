@@ -1,0 +1,37 @@
+{
+  "source": "Twin-2K-500, CC BY 4.0",
+  "source_url": "https://huggingface.co/datasets/LLM-Digital-Twin/Twin-2K-500",
+  "dataset_version": "cc63ced1f8ae0a75defce7651e73a2a147a629244931dcf1c17012cf48848a5f",
+  "files_sha256": {
+    "question_catalog.json": "e72e305f0c7c83bb990e97de4c0cf2c718ead18cc197239b7feeb354c9ac1bef",
+    "wave1_3_response.csv": "fc227b1682e2654fd4b2a8152294b68118c0e3be4d83f4a9af5f3e96df56d3f0",
+    "wave4_response.csv": "09ec1a88bdd48fec95963da3102df0ca467378bf729cbc1c0b869b0f1e4fb942"
+  },
+  "target": "Wave 4 self-reported hypothetical purchase answer on repeated pricing questions",
+  "split": "held-out participants, trained on other participants' earlier and Wave 4 answers",
+  "train_participants": 1647,
+  "test_participants": 411,
+  "test_rows": 16440,
+  "questions": 40,
+  "seed": 42,
+  "trained_at": "2026-11-05T09:01:12.948549+00:00",
+  "metrics": {
+    "question_marginal": {
+      "log_loss": 0.6839574449290442,
+      "brier": 0.24541844064539958,
+      "accuracy": 0.5694647201946472,
+      "roc_auc": 0.5039726633232442
+    },
+    "prior_answer_transition": {
+      "log_loss": 0.43639398285966957,
+      "brier": 0.13316047406837017,
+      "accuracy": 0.8415450121654501,
+      "roc_auc": 0.8390985297106572
+    }
+  },
+  "participant_mean_brier_difference_ci_95": [
+    -0.11794774442092275,
+    -0.1065113425984935
+  ],
+  "limitations": "US survey test-retest on repeated items. Hypothetical answer prediction, with no Indian market or revealed purchase validation."
+}

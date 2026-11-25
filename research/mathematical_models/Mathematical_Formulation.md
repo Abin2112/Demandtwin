@@ -1,0 +1,11 @@
+# Mathematical formulation
+
+For available product j, x_j contains a concept intercept, price divided by INR 30, weight divided by 50 g, and spicy, resealable and premium indicators. The outside option has x_0 = 0. Utility is x_jᵀβ_i + ε_ij, with independent type-I extreme-value errors. P_i(j) = softmax(X_iβ_i)_j. Price sensitivity is estimated freely.
+
+The pooled mode minimizes multinomial negative log likelihood plus (β − m)ᵀΛ(β − m)/2, where m = 0 and Λ = I/9. Segment fits use the pooled mode as a plug-in prior center and variance 0.75I. Local posterior covariance is the inverse of prior precision plus the sum of alternative-feature covariance under fitted probabilities. The PyMC version estimates group and individual deviations with noncentered normal effects and half-normal feature scales. It masks unavailable alternatives.
+
+For evidence channel c, aligned eligible data estimate β_c with a prior centered at the purchase mode and covariance V_purchase + σ_c²I. Each channel retains its own likelihood and predictions. A missing purchase anchor causes abstention. An individual approximation adds heterogeneity covariance to a selected group prior, then updates it with eligible individual choice rows.
+
+Expected information gain for design e is H(E_β P_e) − E_β H(P_e). Approximate both expectations with posterior draws. The interactive adaptive rank divides gain by the number of displayed products. Balanced ranking favors the lowest prior exposure within the chosen segment. A study can select randomized, balanced or adaptive participant assignment. Adaptive assignment further divides the gain-per-product score by (1 + segment exposure)^coverage_penalty, excludes previously assigned tasks, and enforces the saved task budget and price/product limits. A local Gaussian update conditions the empirical segment prior on that participant's previous choices.
+
+For opportunity count N and normalized user weights w_s, expected units are NΣ_s w_s E[P_s(j)]. The interval uses the 5th and 95th quantiles of weighted posterior draw shares. Outside option is retained in all denominators. Own-price elasticity for target j is (p_j / share_j)Σ_s w_s E[β_price,s P_s(j)(1−P_s(j))/30]. Report undefined elasticity for a near-zero denominator.

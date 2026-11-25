@@ -1,0 +1,232 @@
+{
+  "dataset_version": "f5385cbb54bbebf7196389109c6b0621faab0c304e3702548165e71c84aede8b",
+  "data_snapshot_sha256": "d7c3e6a0b297a52c68fdc3d419ebd061cbdb27a00da8827b35854e69bb735ac6",
+  "source": "UCI Online Retail, CC BY 4.0",
+  "target": "any observed invoice in next 30 days",
+  "split": "disjoint customers, 2011-08-01 train snapshot and 2011-10-01 test snapshot; 90-day lookback",
+  "train_n": 1375,
+  "test_n": 479,
+  "train_positive_rate": 0.3236363636363636,
+  "test_positive_rate": 0.34237995824634654,
+  "metrics": {
+    "logistic_regression": {
+      "accuracy": 0.6951983298538622,
+      "precision": 0.6046511627906976,
+      "recall": 0.3170731707317073,
+      "f1": 0.416,
+      "roc_auc": 0.654994192799071,
+      "log_loss": 0.6074849745746975,
+      "brier": 0.20735644570728665,
+      "calibration": [
+        {
+          "confidence": 0.0966379628761812,
+          "observed": 0.0
+        },
+        {
+          "confidence": 0.16170631108966743,
+          "observed": 0.23178807947019867
+        },
+        {
+          "confidence": 0.2330073458248442,
+          "observed": 0.2845528455284553
+        },
+        {
+          "confidence": 0.3558406431452487,
+          "observed": 0.3
+        },
+        {
+          "confidence": 0.4373711501518926,
+          "observed": 0.42857142857142855
+        },
+        {
+          "confidence": 0.5414086893657464,
+          "observed": 0.45454545454545453
+        },
+        {
+          "confidence": 0.6511511548058845,
+          "observed": 0.5652173913043478
+        },
+        {
+          "confidence": 0.7569947388907985,
+          "observed": 0.8125
+        },
+        {
+          "confidence": 0.8350792969964405,
+          "observed": 0.7
+        },
+        {
+          "confidence": 0.9675650588343758,
+          "observed": 1.0
+        }
+      ]
+    },
+    "random_forest": {
+      "accuracy": 0.6910229645093946,
+      "precision": 0.6052631578947368,
+      "recall": 0.2804878048780488,
+      "f1": 0.38333333333333336,
+      "roc_auc": 0.6529616724738676,
+      "log_loss": 0.622070832113982,
+      "brier": 0.21067168407674275,
+      "calibration": [
+        {
+          "confidence": 0.07906354326694572,
+          "observed": 0.3333333333333333
+        },
+        {
+          "confidence": 0.15548130162381785,
+          "observed": 0.24175824175824176
+        },
+        {
+          "confidence": 0.24904220663933932,
+          "observed": 0.22602739726027396
+        },
+        {
+          "confidence": 0.34357246140951603,
+          "observed": 0.2857142857142857
+        },
+        {
+          "confidence": 0.446677432484942,
+          "observed": 0.5686274509803921
+        },
+        {
+          "confidence": 0.5418749798040232,
+          "observed": 0.5294117647058824
+        },
+        {
+          "confidence": 0.6578147735238938,
+          "observed": 0.5555555555555556
+        },
+        {
+          "confidence": 0.7527085873524973,
+          "observed": 0.5789473684210527
+        },
+        {
+          "confidence": 0.8594038640683864,
+          "observed": 0.6875
+        },
+        {
+          "confidence": 0.910038048024605,
+          "observed": 0.8333333333333334
+        }
+      ]
+    },
+    "xgboost": {
+      "accuracy": 0.697286012526096,
+      "precision": 0.6172839506172839,
+      "recall": 0.3048780487804878,
+      "f1": 0.40816326530612246,
+      "roc_auc": 0.6412698412698412,
+      "log_loss": 0.6247562170028687,
+      "brier": 0.21224214136600494,
+      "calibration": [
+        {
+          "confidence": 0.0932203627684537,
+          "observed": 0.23529411764705882
+        },
+        {
+          "confidence": 0.15380477180911434,
+          "observed": 0.25925925925925924
+        },
+        {
+          "confidence": 0.24587768695739484,
+          "observed": 0.2608695652173913
+        },
+        {
+          "confidence": 0.35184700136453334,
+          "observed": 0.323943661971831
+        },
+        {
+          "confidence": 0.44038752084825095,
+          "observed": 0.4146341463414634
+        },
+        {
+          "confidence": 0.5432110116595313,
+          "observed": 0.47619047619047616
+        },
+        {
+          "confidence": 0.6462727963924408,
+          "observed": 0.7
+        },
+        {
+          "confidence": 0.7370634904274573,
+          "observed": 0.38461538461538464
+        },
+        {
+          "confidence": 0.8566150537558964,
+          "observed": 0.7857142857142857
+        },
+        {
+          "confidence": 0.926797880576207,
+          "observed": 0.7692307692307693
+        }
+      ]
+    }
+  },
+  "seed": 42,
+  "features": [
+    "invoices",
+    "stock_codes",
+    "units",
+    "spend_gbp",
+    "recency_days"
+  ],
+  "feature_version": "retail-repeat-v1",
+  "model_config": {
+    "logistic_regression": {
+      "verbose": false,
+      "standardscaler__copy": true,
+      "standardscaler__with_mean": true,
+      "standardscaler__with_std": true,
+      "logisticregression__C": 1.0,
+      "logisticregression__dual": false,
+      "logisticregression__fit_intercept": true,
+      "logisticregression__intercept_scaling": 1,
+      "logisticregression__l1_ratio": 0.0,
+      "logisticregression__max_iter": 1000,
+      "logisticregression__penalty": "deprecated",
+      "logisticregression__random_state": 42,
+      "logisticregression__solver": "lbfgs",
+      "logisticregression__tol": 0.0001,
+      "logisticregression__verbose": 0,
+      "logisticregression__warm_start": false
+    },
+    "random_forest": {
+      "bootstrap": true,
+      "ccp_alpha": 0.0,
+      "criterion": "gini",
+      "max_features": "sqrt",
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 12,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "n_estimators": 250,
+      "n_jobs": 2,
+      "oob_score": false,
+      "random_state": 42,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "xgboost": {
+      "objective": "binary:logistic",
+      "enable_categorical": true,
+      "learning_rate": 0.035,
+      "max_depth": 3,
+      "n_estimators": 180,
+      "n_jobs": 2,
+      "random_state": 42,
+      "subsample": 0.9
+    }
+  },
+  "artifacts": [
+    "artifacts/retail/logistic_regression.joblib",
+    "artifacts/retail/random_forest.joblib",
+    "artifacts/retail/xgboost.joblib"
+  ],
+  "software_versions": {
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "pandas": "3.1.1"
+  },
+  "trained_at": "2026-11-05T08:46:49.173930+00:00"
+}

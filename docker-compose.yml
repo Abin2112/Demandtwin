@@ -1,0 +1,70 @@
+name: demandtwin
+x-backend: &backend
+  build:
+    context: .
+    dockerfile: backend/Dockerfile
+  environment:
+    DATABASE_URL: postgresql+psycopg://demandtwin:${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}@postgres:5432/demandtwin
+    JWT_SECRET: ${JWT_SECRET:?Set JWT_SECRET in .env}
+    CELERY_BROKER_URL: redis://redis:6379/0
+    RESEARCH_REGISTRATION_CODE: ${RESEARCH_REGISTRATION_CODE:-}
+    ETHICS_PROTOCOL_ID: ${ETHICS_PROTOCOL_ID:-}
+    ETHICS_CONSENT_TEXT: ${ETHICS_CONSENT_TEXT:-}
+    SECURE_COOKIES: ${SECURE_COOKIES:-0}
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: demandtwin
+      POSTGRES_USER: demandtwin
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "demandtwin", "-d", "demandtwin"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  api:
+    <<: *backend
+    ports: ["127.0.0.1:${DEMANDTWIN_API_PORT:-8000}:8000"]
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/v1/health', timeout=2)"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  worker:
+    <<: *backend
+    command: ["celery", "-A", "app.jobs:worker", "worker", "--loglevel=INFO", "--concurrency=2"]
+    depends_on:
+      api: {condition: service_healthy}
+  frontend:
+    build:
+      context: frontend
+    ports: ["127.0.0.1:${DEMANDTWIN_WEB_PORT:-3000}:3000"]
+    depends_on:
+      api: {condition: service_healthy}
+  mlflow:
+    profiles: ["research"]
+    image: ghcr.io/mlflow/mlflow:v3.18.0
+    command: ["mlflow", "server", "--host", "0.0.0.0", "--port", "5000", "--backend-store-uri", "sqlite:////mlflow/mlflow.db", "--artifacts-destination", "/mlflow/artifacts"]
+    ports: ["127.0.0.1:5000:5000"]
+    volumes:
+      - mlflow-data:/mlflow
+volumes:
+  postgres-data:
+  redis-data:
+  mlflow-data:

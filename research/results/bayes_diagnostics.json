@@ -1,0 +1,24 @@
+{
+  "rhat_max": 1.0087733269323484,
+  "ess_min": 633.6956955299722,
+  "divergences": 0,
+  "reliable": true,
+  "observed_no_purchase_rate": 0.4722222222222222,
+  "replicated_no_purchase_interval_90": [
+    0.37962962962962965,
+    0.5740740740740741
+  ],
+  "synthetic": true,
+  "draws_per_chain": 500,
+  "tune": 500,
+  "participants": 18,
+  "backend": "PyTensor NUMBA",
+  "seed": 42,
+  "chains": 4,
+  "software_versions": {
+    "pymc": "5.28.5",
+    "arviz": "0.23.4",
+    "pytensor": "2.38.3",
+    "numpy": "2.4.6"
+  }
+}

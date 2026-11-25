@@ -1,0 +1,288 @@
+{
+  "seed": 42,
+  "split": "grouped by participant; repeated designs may appear on both sides",
+  "train_rows": 432,
+  "test_rows": 108,
+  "train_participants": 72,
+  "test_participants": 18,
+  "metrics": {
+    "conditional_logit_laplace": {
+      "rows": 108,
+      "log_loss": 0.9209137064849867,
+      "brier": 0.5416072765737209,
+      "accuracy": 0.5740740740740741,
+      "calibration": [
+        {
+          "confidence": 0.3659950864048187,
+          "accuracy": 0.43478260869565216,
+          "n": 23
+        },
+        {
+          "confidence": 0.4465073253353013,
+          "accuracy": 0.4523809523809524,
+          "n": 42
+        },
+        {
+          "confidence": 0.5633539264314881,
+          "accuracy": 0.6363636363636364,
+          "n": 11
+        },
+        {
+          "confidence": 0.6381284125518942,
+          "accuracy": 0.7727272727272727,
+          "n": 22
+        },
+        {
+          "confidence": 0.7179093093759883,
+          "accuracy": 0.9,
+          "n": 10
+        }
+      ],
+      "segments": {
+        "value": {
+          "rows": 48,
+          "log_loss": 0.8792061821004973,
+          "brier": 0.5110397932625165,
+          "accuracy": 0.5416666666666666,
+          "calibration": [
+            {
+              "confidence": 0.3664584701746794,
+              "accuracy": 0.3333333333333333,
+              "n": 12
+            },
+            {
+              "confidence": 0.4421707503807051,
+              "accuracy": 0.29411764705882354,
+              "n": 17
+            },
+            {
+              "confidence": 0.5633539264314881,
+              "accuracy": 0.8333333333333334,
+              "n": 6
+            },
+            {
+              "confidence": 0.635989048390653,
+              "accuracy": 0.875,
+              "n": 8
+            },
+            {
+              "confidence": 0.7179093093759882,
+              "accuracy": 1.0,
+              "n": 5
+            }
+          ]
+        },
+        "balanced": {
+          "rows": 36,
+          "log_loss": 0.9352682030609559,
+          "brier": 0.5525133109910575,
+          "accuracy": 0.6111111111111112,
+          "calibration": [
+            {
+              "confidence": 0.3679810168470791,
+              "accuracy": 0.5714285714285714,
+              "n": 7
+            },
+            {
+              "confidence": 0.4479596627861913,
+              "accuracy": 0.5333333333333333,
+              "n": 15
+            },
+            {
+              "confidence": 0.5633539264314881,
+              "accuracy": 0.5,
+              "n": 2
+            },
+            {
+              "confidence": 0.6403470124228116,
+              "accuracy": 0.7777777777777778,
+              "n": 9
+            },
+            {
+              "confidence": 0.7179093093759882,
+              "accuracy": 0.6666666666666666,
+              "n": 3
+            }
+          ]
+        },
+        "premium": {
+          "rows": 24,
+          "log_loss": 0.9827970103900108,
+          "brier": 0.5863831915701244,
+          "accuracy": 0.5833333333333334,
+          "calibration": [
+            {
+              "confidence": 0.3611295568212806,
+              "accuracy": 0.5,
+              "n": 4
+            },
+            {
+              "confidence": 0.45170099658178,
+              "accuracy": 0.6,
+              "n": 10
+            },
+            {
+              "confidence": 0.5633539264314881,
+              "accuracy": 0.3333333333333333,
+              "n": 3
+            },
+            {
+              "confidence": 0.63755791544223,
+              "accuracy": 0.6,
+              "n": 5
+            },
+            {
+              "confidence": 0.7179093093759882,
+              "accuracy": 1.0,
+              "n": 2
+            }
+          ]
+        }
+      }
+    },
+    "empirical_bayes_laplace": {
+      "rows": 108,
+      "log_loss": 0.8715341754517442,
+      "brier": 0.510175621710636,
+      "accuracy": 0.6111111111111112,
+      "calibration": [
+        {
+          "confidence": 0.3788017159793008,
+          "accuracy": 0.26666666666666666,
+          "n": 15
+        },
+        {
+          "confidence": 0.44169197221759326,
+          "accuracy": 0.5833333333333334,
+          "n": 36
+        },
+        {
+          "confidence": 0.5192552818310658,
+          "accuracy": 0.5625,
+          "n": 16
+        },
+        {
+          "confidence": 0.6505823337740934,
+          "accuracy": 0.6,
+          "n": 15
+        },
+        {
+          "confidence": 0.7557126746500875,
+          "accuracy": 0.8461538461538461,
+          "n": 13
+        },
+        {
+          "confidence": 0.853077630447333,
+          "accuracy": 0.9230769230769231,
+          "n": 13
+        }
+      ],
+      "segments": {
+        "value": {
+          "rows": 48,
+          "log_loss": 0.752539093189054,
+          "brier": 0.4299500556610835,
+          "accuracy": 0.7083333333333334,
+          "calibration": [
+            {
+              "confidence": 0.3970781135662811,
+              "accuracy": 0.5,
+              "n": 4
+            },
+            {
+              "confidence": 0.4463489781546272,
+              "accuracy": 0.7272727272727273,
+              "n": 11
+            },
+            {
+              "confidence": 0.502408968665747,
+              "accuracy": 0.3333333333333333,
+              "n": 6
+            },
+            {
+              "confidence": 0.6584517118097717,
+              "accuracy": 0.625,
+              "n": 8
+            },
+            {
+              "confidence": 0.7885694378526785,
+              "accuracy": 0.8333333333333334,
+              "n": 6
+            },
+            {
+              "confidence": 0.853077630447333,
+              "accuracy": 0.9230769230769231,
+              "n": 13
+            }
+          ]
+        },
+        "balanced": {
+          "rows": 36,
+          "log_loss": 0.9500525298863712,
+          "brier": 0.5639718028837218,
+          "accuracy": 0.5277777777777778,
+          "calibration": [
+            {
+              "confidence": 0.3776149983617863,
+              "accuracy": 0.2857142857142857,
+              "n": 7
+            },
+            {
+              "confidence": 0.4531679704589929,
+              "accuracy": 0.45454545454545453,
+              "n": 11
+            },
+            {
+              "confidence": 0.543384213984285,
+              "accuracy": 0.5,
+              "n": 4
+            },
+            {
+              "confidence": 0.6415887588761754,
+              "accuracy": 0.5714285714285714,
+              "n": 7
+            },
+            {
+              "confidence": 0.7275497347621523,
+              "accuracy": 0.8571428571428571,
+              "n": 7
+            }
+          ]
+        },
+        "premium": {
+          "rows": 24,
+          "log_loss": 0.9917468083251837,
+          "brier": 0.5899324820501123,
+          "accuracy": 0.5416666666666666,
+          "calibration": [
+            {
+              "confidence": 0.36260207422297075,
+              "accuracy": 0.0,
+              "n": 4
+            },
+            {
+              "confidence": 0.4290160403631097,
+              "accuracy": 0.5714285714285714,
+              "n": 14
+            },
+            {
+              "confidence": 0.5200156402275716,
+              "accuracy": 0.8333333333333334,
+              "n": 6
+            }
+          ]
+        }
+      }
+    }
+  },
+  "serving_fit": "all eligible observations",
+  "synthetic": true,
+  "dataset_version": "65bffb3f3820719bf2df6db817417effb890d9aa4eb5c8d9ff40114b60d3e76c",
+  "feature_version": "snacks-v1",
+  "artifact": "artifacts/choice/synthetic_model.json",
+  "trained_at": "2026-11-05T08:46:56.446618+00:00",
+  "software_versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.18.1"
+  }
+}
